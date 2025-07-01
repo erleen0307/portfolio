@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="icon" type="image/x-icon" href="favicon.png" />
+
+	<!-- Meta Description -->
+	<meta name="description"
+		content="Erleen Kaur's portfolio - frontend developer skilled in responsive design, clean UI, and modern web projects.">
+
+	<!-- Open Graph (for LinkedIn, etc.) -->
+	<meta property="og:title" content="Erleen Kaur | Web Developer Portfolio">
+	<meta property="og:description"
+		content="Explore Erleen's projects, skills, and contact info - a clean, responsive portfolio for modern web development.">
+	<meta property="og:type" content="website">
+
+
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<!-- Font Awesome -->
+	<title>Erleen Kaur | Web Developer</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+		integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Animations -->
+	<style>
+		@keyframes fade-in {
+			0% {
+				opacity: 0;
+				transform: translateY(20px);
+			}
+
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.animate-fade-in {
+			animation: fade-in 0.8s ease-out forwards;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<!-- Navbar -->
+		<nav id="home">
+			<div
+				class="flex w-full bg-[#508AA8] pt-2 text-white sm:flex-col sm:items-center sm:space-y-1 sm:py-1 md:h-16 md:flex-row md:justify-evenly md:text-2xl lg:h-20 lg:text-3xl">
+				<a href="#home"
+					class="transition-all ease-in-out duration-300 sm:hover:text-[1.2rem] md:hover:text-[1.7rem] lg:hover:text-[2.2rem]">Home</a>
+				<a href="#projects"
+					class="transition-all ease-in-out duration-300 sm:hover:text-[1.2rem] md:hover:text-[1.7rem] lg:hover:text-[2.2rem]">Projects</a>
+				<a href="#tech-stack"
+					class="transition-all ease-in-out duration-300 sm:hover:text-[1.2rem] md:hover:text-[1.7rem] lg:hover:text-[2.2rem]">Skills</a>
+				<a href="#about"
+					class="transition-all ease-in-out duration-300 sm:hover:text-[1.2rem] md:hover:text-[1.7rem] lg:hover:text-[2.2rem]">About</a>
+				<a href="#contact"
+					class="transition-all ease-in-out duration-300 sm:hover:text-[1.2rem] md:hover:text-[1.7rem] lg:hover:text-[2.2rem]">Contact</a>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<div class="flex flex-col items-center justify-center bg-[#C8E0F4] px-6 py-10 md:flex-row">
+			<!-- Text Section -->
+			<div class="animate-fade-in flex flex-col items-center space-y-4 text-center md:w-1/2 md:items-center">
+				<h1
+					class="font-semibold text-[#0D466A] sm:text-3xl md:text-4xl lg:text-5xl transition-all duration-300 hover:sm:text-4xl hover:md:text-5xl hover:lg:text-6xl">
+					Hi, I'm Erleen👋</h1>
+				<h3 class="font-bold text-[#0D466A] italic underline hover:no-underline sm:text-lg md:text-xl">Front-End
+					Developer · Aspiring Full Stack Developer</h3>
+				<p class="max-w-md font-semibold text-[#0D466A] italic sm:text-base md:text-lg">Front-end developer crafting
+					responsive, clean web interfaces with HTML, CSS, JavaScript & Tailwind.</p>
+				<div class="flex flex-row space-x-4">
+					<a href="#projects">
+						<button
+							class="rounded-lg bg-[#0D466A] px-4 py-2 text-white transition duration-200 ease-in-out hover:bg-[#11578C] active:bg-[#4798DC]">View
+							Projects</button>
+					</a>
+					<a href="Erleen_Resume.pdf" download>
+						<button
+							class="rounded-lg bg-[#0D466A] px-4 py-2 text-white transition duration-200 ease-in-out hover:bg-[#11578C] active:bg-[#4798DC]">Download
+							Resume 📄</button>
+					</a>
+				</div>
+			</div>
+
+			<!-- Image Section -->
+			<div class="animate-fade-in mt-10 flex justify-center md:mt-0 md:w-1/2">
+				<img src="hero.png" alt="Developer setup" class="h-auto max-w-full rounded-lg shadow-md" />
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- Featured Projects Section -->
+		<section>
+			<!-- Featured Projects Heading -->
+			<div id="projects" class="flex w-full justify-center bg-[#508AA8] pt-10 pb-5">
+				<h2
+					class="text-white underline sm:text-2xl md:text-3xl lg:text-5xl transition-all duration-300 ease-in-out hover:sm:text-3xl hover:md:text-4xl hover:lg:text-6xl">
+					Featured Projects
+				</h2>
+			</div>
+
+			<!-- Project Cards Grid -->
+			<div class="grid items-start gap-14 bg-[#508AA8] px-6 sm:px-10 md:px-20 py-20 md:grid-cols-2">
+				<!-- Card 1 - To Do List App -->
+				<div
+					class="fade-in w-full max-w-3xl rounded-lg border border-white bg-[#3A5F78] p-6 text-white shadow-lg hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-blue-300">
+					<h4 class="p-2 text-center text-2xl md:text-3xl lg:text-4xl font-bold">To-do List App</h4>
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Tech Stack:</p>
+					<p class="pb-4 text-lg font-semibold sm:text-base">HTML | CSS | JavaScript | localStorage</p>
+
+					<img src="to-do-list.png" alt="To-do List App Preview" class="h-auto w-full rounded-md shadow" />
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Description:</p>
+					<p class="pb-4 text-center text-lg font-semibold sm:text-base">A clean, responsive, and persistent to-do list
+						web app built with HTML, CSS, and JavaScript. Tasks are saved using localStorage, so your list stays intact
+						even after refreshing the page.</p>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Live Link:</p>
+					<a href="https://erleen0307.github.io/to-do-app-v2/"
+						class="block text-lg font-semibold hover:text-blue-200 hover:underline sm:text-base">https://erleen0307.github.io/to-do-app-v2/</a>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Github Repo:</p>
+					<a href="https://github.com/erleen0307/to-do-app-v2"
+						class="block text-lg font-semibold hover:text-blue-200 hover:underline sm:text-base">https://github.com/erleen0307/to-do-app-v2</a>
+				</div>
+
+				<!-- Card 2 - Weather App -->
+				<div
+					class="fade-in w-full max-w-3xl rounded-lg border border-white bg-[#3A5F78] p-6 text-white shadow-lg hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-blue-300">
+					<h4 class="p-2 text-center font-bold text-2xl md:text-3xl lg:text-4xl">Weather App</h4>
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Tech Stack:</p>
+					<p class="pb-4 text-lg font-semibold sm:text-base">HTML | CSS | JavaScript | localStorage | OpenWeatherMap API
+					</p>
+
+					<img src="weather-app.png" alt="Weather App Preview" class="h-auto w-full rounded-md shadow" />
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Description:</p>
+					<p class="pb-4 text-center text-lg font-semibold sm:text-base">A responsive and visually appealing weather
+						application built using HTML, CSS, and JavaScript. It fetches real-time weather data and forecasts using the
+						OpenWeatherMap API.</p>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Live Link:</p>
+					<a href="https://erleen0307.github.io/weather-app/"
+						class="block text-lg font-semibold hover:text-blue-200 hover:underline sm:text-base">https://erleen0307.github.io/weather-app/</a>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Github Repo:</p>
+					<a href="https://github.com/erleen0307/weather-app"
+						class="block text-lg font-semibold hover:text-blue-200 hover:underline sm:text-base">https://github.com/erleen0307/weather-app</a>
+				</div>
+
+				<!-- Card 3 - Currency Converter App -->
+				<div
+					class="fade-in w-full max-w-3xl rounded-lg border border-white bg-[#3A5F78] p-6 text-white shadow-lg hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-blue-300">
+					<h4 class="p-2 text-center font-bold text-2xl md:text-3xl lg:text-4xl">Currency Converter App</h4>
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Tech Stack:</p>
+					<p class="pb-4 text-lg font-semibold sm:text-base">HTML | CSS | JavaScript | ExchangeRate.host API | REST
+						Countries API | FlagCDN API</p>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Light Mode:</p>
+					<img src="converter-preview-light-mode.png" alt="Currency Converter Light Mode"
+						class="mb-4 h-auto w-full rounded-md shadow" />
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Dark Mode:</p>
+					<img src="converter-preview-dark-mode.png" alt="Currency Converter Dark Mode"
+						class="h-auto w-full rounded-md shadow" />
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Description:</p>
+					<p class="pb-4 text-center text-lg font-semibold sm:text-base">A sleek and simple currency converter web app
+						built using HTML, CSS, and JavaScript. It fetches real-time exchange rates using an API and supports
+						features like currency swapping, conversion rate display, and dark mode.</p>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Live Link:</p>
+					<a href="https://erleen0307.github.io/currency-converter/"
+						class="block text-lg font-semibold hover:text-blue-200 hover:underline sm:text-base">https://erleen0307.github.io/currency-converter/</a>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Github Repo:</p>
+					<a href="https://github.com/erleen0307/currency-converter"
+						class="block text-lg font-semibold hover:text-blue-200 hover:underline sm:text-base">https://github.com/erleen0307/currency-converter</a>
+				</div>
+
+				<!-- Card 4 - Wordify App -->
+				<div
+					class="fade-in w-full max-w-3xl rounded-lg border border-white bg-[#3A5F78] p-6 text-white shadow-lg hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-blue-300">
+					<h4 class="p-2 text-center font-bold text-2xl md:text-3xl lg:text-4xl">Wordify App</h4>
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Tech Stack:</p>
+					<p class="pb-4 text-lg font-semibold sm:text-base">HTML | CSS | JavaScript | Dictionary API | Wikimedia API
+					</p>
+
+					<img src="wordify.png" alt="Wordify App Preview" class="h-auto w-full rounded-md shadow" />
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Description:</p>
+					<p class="pb-4 text-center text-lg font-semibold sm:text-base">A fun and interactive word-based project built
+						using HTML, CSS, and JavaScript.</p>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Live Link:</p>
+					<a href="https://erleen0307.github.io/wordify/"
+						class="block text-lg font-semibold hover:text-blue-200 hover:underline sm:text-base">https://erleen0307.github.io/wordify/</a>
+
+					<p class="pt-4 text-xl font-semibold sm:text-lg">Github Repo:</p>
+					<a href="https://github.com/erleen0307/wordify"
+						class="block text-lg font-semibold hover:text-blue-200 hover:underline sm:text-base">https://github.com/erleen0307/wordify</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills/ Tech Stack Section -->
+		<section id="tech-stack" class="flex flex-col text-[#0D466A] pb-10 bg-[#C8E0F4]">
+			<!-- Heading -->
+			<div class="text-center">
+				<h2
+					class="pt-8 sm:py-2 md:py-6 underline transition-all sm:text-2xl md:text-3xl lg:text-5xl hover:sm:text-3xl hover:md:text-4xl hover:lg:text-6xl duration-300 ease-in-out">
+					Tech Stack
+				</h2>
+				<p class="text-xl font-semibold text-blue-900 italic">
+					A quick snapshot of my current and upcoming skills.
+				</p>
+			</div>
+
+			<!-- Skills Cards Grid -->
+			<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 sm:px-10 md:px-20 pt-10">
+				<!-- Frontend -->
+				<div
+					class="fade-in border border-[#0D466A] bg-[#A9CBE8] rounded-lg p-5 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-blue-300">
+					<h3 class="text-center text-3xl font-bold pb-3">💻 Frontend</h3>
+					<ul class="list-disc list-inside space-y-2 font-semibold">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Tailwind CSS</li>
+						<li>JavaScript (ES6+)</li>
+						<li>DOM Manipulation</li>
+						<li>Responsive Web Design</li>
+					</ul>
+				</div>
+
+				<!-- Backend -->
+				<div
+					class="fade-in border border-[#0D466A] bg-[#A9CBE8] rounded-lg p-5 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-blue-300">
+					<h3 class="text-center text-3xl font-bold pb-3">🖥️ Backend</h3>
+					<ul class="list-disc list-inside space-y-2 font-semibold">
+						<li>Python (Core + File Handling)</li>
+						<li>MySQL (Basic SQL + Joins)</li>
+					</ul>
+				</div>
+
+				<!-- Tools and Platforms -->
+				<div
+					class="fade-in border border-[#0D466A] bg-[#A9CBE8] rounded-lg p-5 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-blue-300">
+					<h3 class="text-center text-3xl font-bold pb-3">🛠️ Tools and Platforms</h3>
+					<ul class="list-disc list-inside space-y-2 font-semibold">
+						<li>Git & Github</li>
+						<li>VS Code</li>
+						<li>Canva (for design assets)</li>
+					</ul>
+				</div>
+
+				<!-- Upcoming -->
+				<div
+					class="fade-in border border-[#0D466A] bg-[#A9CBE8] rounded-lg p-5 shadow-lg hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-blue-300">
+					<h3 class="text-center text-3xl font-bold pb-3">🚀 Upcoming</h3>
+					<ul class="list-disc list-inside space-y-2 font-semibold">
+						<li>React.js (Starting Soon)</li>
+						<li>Advanced SQL and DBMS Concepts</li>
+						<li>C</li>
+						<li>C++</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Me Section -->
+		<section id="about" class="bg-[#508AA8] text-white w-full h-auto px-6 py-12 sm:py-8 sm:px-4">
+			<!-- Heading -->
+			<div class="flex justify-center mb-10">
+				<h2
+					class="font-semibold underline text-3xl md:text-4xl lg:text-5xl hover:sm:text-4xl hover:md:text-5xl hover:lg:text-6xl transition-all duration-300 ease-in-out">
+					About Me
+				</h2>
+			</div>
+
+			<!-- Content -->
+			<div class="flex flex-col justify-center md:flex-row items-center gap-8 md:gap-16 lg:gap-20 ">
+				<!-- Bitmoji -->
+				<img src="bitmoji.jpg" alt="Bitmoji Photo"
+					class="rounded-full w-40 md:w-56 border-4 border-white shadow-md hover:scale-105 hover:shadow-[0_0_25px_rgba(173,216,230,0.6)] transition-all duration-300 ease-in-out">
+
+				<!-- Text Content -->
+				<div class="md:w-1/2 text-lg md:text-xl italic space-y-4">
+					<p>
+						Hi! I'm a front-end developer passionate about creating clean, responsive,
+						and interactive web experiences. I work with HTML, CSS, JavaScript, and Tailwind CSS
+						to build engaging, well-structured designs. My recent projects include a weather app,
+						currency converter, and a to-do app using localStorage — each one built from scratch
+						to sharpen my skills in API integration, responsiveness, and UI design.
+					</p>
+					<p>
+						I'm currently exploring advanced topics like React and database management,
+						and I'm always excited to learn new technologies. I enjoy growing as a developer
+						and contributing to meaningful, impactful projects.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Me Section -->
+		<section id="contact" class="flex flex-col items-center bg-[#DDE6F0] text-[#2C3E50] py-12">
+			<!-- Heading -->
+			<h3
+				class="font-bold underline text-center sm:text-3xl md:text-4xl lg:text-5xl mb-8 transition-all duration-300 ease-in-out hover:sm:text-4xl hover:md:text-5xl hover:lg:text-6xl">
+				Let's Connect
+			</h3>
+
+			<!-- Contact Links -->
+			<ul class="text-xl space-y-4 text-center">
+				<li>
+					<a href="mailto:erlenerare@outlook.com" class="hover:underline hover:text-[#1d3557] transition duration-200">
+						<i class="fa-solid fa-envelope mr-2"></i>erlenerare@outlook.com
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/erleen-kaur-414650361" target="_blank"
+						class="hover:underline hover:text-[#1d3557] transition duration-200">
+						<i class="fa-brands fa-linkedin mr-2"></i>Erleen Kaur
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/erleen0307" target="_blank"
+						class="hover:underline hover:text-[#1d3557] transition duration-200">
+						<i class="fa-brands fa-github mr-2"></i>erleen0307
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="bg-[#4B6078] text-white py-4 flex flex-col items-center text-center text-sm sm:text-base">
+		<p class="mb-2">Designed & built by Erleen © 2025</p>
+		<div class="flex space-x-6 text-lg">
+			<a href="mailto:erlenerare@outlook.com" class="hover:text-blue-200 transition duration-200">
+				<i class="fa-solid fa-envelope"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/erleen-kaur-414650361" target="_blank"
+				class="hover:text-blue-200 transition duration-200">
+				<i class="fa-brands fa-linkedin"></i>
+			</a>
+			<a href="https://github.com/erleen0307" target="_blank" class="hover:text-blue-200 transition duration-200">
+				<i class="fa-brands fa-github"></i>
+			</a>
+		</div>
+	</footer>
+
+	<!-- Back to Top Button -->
+	<button id="backToTopBtn" title="Back to Top"
+		class="fixed bottom-6 right-6 z-50 hidden rounded-full bg-[#0D466A] p-3 text-white shadow-lg hover:bg-[#11578C] transition-all duration-300">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+
+	<script>
+		const fadeIns = document.querySelectorAll('.fade-in');
+
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('opacity-100', 'translate-y-0');
+					entry.target.classList.remove('opacity-0', 'translate-y-10');
+				}
+			});
+		}, {
+			threshold: 0.1,
+		});
+
+		fadeIns.forEach(el => {
+			el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+			observer.observe(el);
+		});
+
+		const backToTopBtn = document.getElementById("backToTopBtn");
+
+		window.addEventListener("scroll", () => {
+			if (window.scrollY > 400) {
+				backToTopBtn.classList.remove("hidden");
+			} else {
+				backToTopBtn.classList.add("hidden");
+			}
+		});
+
+		backToTopBtn.addEventListener("click", () => {
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth"
+			});
+		});
+	</script>
+
+</body>
+
+</html>
